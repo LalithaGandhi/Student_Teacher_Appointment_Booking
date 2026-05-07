@@ -45,6 +45,10 @@ exports.login = catchAsync(async (req, res, next) => {
     data: { user },
     token
   });
+
+  console.log("Entered Email:", email);
+  console.log("User Found:", user);
+
 });
 
 exports.updatePassword = async (req, res, next) => {
@@ -83,3 +87,6 @@ exports.verifyToken = catchAsync(async (req, res, next) => {
 
   next();
 });
+
+
+

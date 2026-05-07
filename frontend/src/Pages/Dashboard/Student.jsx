@@ -35,7 +35,7 @@ function Student() {
   };
 
   useEffect(() => {
-    ///////////////////////////////////////////////////////////////
+    //
     const emailAdd = localStorage.getItem("email");
     setEmail(emailAdd);
     // console.log(emailAdd);

@@ -1,6 +1,6 @@
 const express=require('express');
 
-const { getAllTeachers, createTeacher, getTeacher, updateTeacher, deleteTeacher, allow, setRole, approveStudent, deleteStudent } = require('../controllers/adminController');
+const { getAllTeachers, createTeacher, getTeacher, updateTeacher, deleteTeacher, allow, setRole, approveStudent, deleteStudent,getAllStudents } = require('../controllers/adminController');
 const { verifyToken } = require('../controllers/authController');
 const router = express.Router()
 
@@ -9,6 +9,6 @@ router.route('/').get(verifyToken,getAllTeachers).post(verifyToken,allow('admin'
 router.route('/:id').get(getTeacher).patch(updateTeacher).delete(deleteTeacher);
 router.route('/rejectStudent/:id').delete(deleteStudent);
 router.route('/approvestudent/:id').patch(approveStudent);
-
+router.get('/students',verifyToken,allow('admin'),getAllStudents);
 
 module.exports = router
