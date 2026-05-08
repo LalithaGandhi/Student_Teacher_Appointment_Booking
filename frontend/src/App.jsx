@@ -1,5 +1,5 @@
-
 // index.js or another appropriate file
+
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Studentsignup from "./components/Signup/Student";
 import Studentlogin from "./components/Login/StudentForm";
@@ -38,5 +38,4 @@ function App() {
     </>
   );
 }
-
 export default App;
