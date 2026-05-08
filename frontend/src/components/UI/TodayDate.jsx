@@ -23,5 +23,4 @@ function TodayDateComponent() {
     </div>
   );
 }
-
 export default TodayDateComponent;
