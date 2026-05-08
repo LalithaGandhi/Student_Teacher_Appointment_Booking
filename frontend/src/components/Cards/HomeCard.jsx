@@ -24,5 +24,4 @@ function HomeCard({ img, name }) {
     </div>
   );
 }
-
 export default HomeCard;
