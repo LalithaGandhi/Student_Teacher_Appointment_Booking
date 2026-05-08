@@ -5,6 +5,4 @@ const { allow } = require('../controllers/adminController');
 const router = express.Router();
 
 router.route('/').get(verifyToken, allow('teacher'), getAllMessages).post(verifyToken, allow('student'), sendMessage);
-
-
 module.exports = router;
