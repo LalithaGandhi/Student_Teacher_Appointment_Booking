@@ -10,7 +10,6 @@ exports.connect = () => {
                 pass: process.env.MAIL_PASS,
             },
         });
-
         return transporter;
     }
     catch (error) {
