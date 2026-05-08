@@ -204,6 +204,7 @@ function Teacher() {
       console.error("Error changing approval status:", error.message);
     }
   };
+  
   const handleStudentReject = async (studentId, teacherAppointmentId) => {
     try {
       setSpinner(true);
@@ -236,8 +237,6 @@ function Teacher() {
   };
 
   const handleTimeSlotSelect = (timeSlot) => {
-
-
     setSelectedTimeSlot(timeSlot);
     setHighlightedTimeSlot(timeSlot);
   };
@@ -618,5 +617,4 @@ function Teacher() {
     </>
   );
 }
-
 export default Teacher;
