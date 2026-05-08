@@ -1,4 +1,5 @@
-export default function capitalizeName(name) {
+export default function capitalizeName(name) 
+{
     // Split the name into an array of words
     const words = name.split(' ');
 
