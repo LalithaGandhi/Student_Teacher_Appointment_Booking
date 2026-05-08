@@ -1,4 +1,4 @@
-//vercel-configuration file used to customize and override default settings for projects deployed on Vercel
+//configuration file used to customize and override default settings for projects deployed on vercel.
 {
     "version": 2,
     "builds": [
