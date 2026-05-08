@@ -109,5 +109,4 @@ function StudentLogin() {
     </>
   );
 }
-
 export default StudentLogin;
