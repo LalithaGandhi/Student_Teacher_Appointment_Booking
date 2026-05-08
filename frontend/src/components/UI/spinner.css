@@ -10,7 +10,6 @@
   animation: rotation 2s linear infinite;
 }
 
-
 .loader::after {
   content: '';
   box-sizing: border-box;
