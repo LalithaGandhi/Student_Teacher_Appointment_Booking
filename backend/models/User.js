@@ -66,14 +66,10 @@ userSchema.pre('save',async function(next){
     if(!this.isModified('password')){
         return next()
     }
-    
-       
     const hash = await bcrypt.hash(this.password,10)
     this.password=hash
-    this.passwordConfirm=undefined
-
-   
-   next()
+    this.passwordConfirm=undefined  
+    next()
 
 })
 
@@ -98,8 +94,6 @@ userSchema.index(
       }
     }
   );
-
-
 
 const User = mongoose.model('User',userSchema)
 module.exports = User
