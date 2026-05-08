@@ -55,7 +55,7 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/LalithaGandhi/Student-Teacher-Appointment-Booking
+    git clone https://github.com/LalithaGandhi/Student_Teacher_Appointment_Booking
     ```
 
 2. **Install backend dependencies:**
