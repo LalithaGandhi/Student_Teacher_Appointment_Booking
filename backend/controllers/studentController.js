@@ -112,8 +112,6 @@ exports.bookAppointment = catchAsync(async (req, res, next) => {
   });
 });
 
-
-
 exports.getTeacherWithAppointments = catchAsync(async (req, res, next) => {
   const appointments = await getTeacherWithAppointments(req.user.id);
   res.status(200).json({
