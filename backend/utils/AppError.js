@@ -5,8 +5,5 @@ class AppError {
         this.status='Fail'
         this.isOperational = true
     }
-    
-
 }
-
 module.exports = AppError
