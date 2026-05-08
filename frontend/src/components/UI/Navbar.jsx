@@ -6,11 +6,10 @@ import { FaMoon, FaSun } from "react-icons/fa";
 import { ThemeContext } from "../../context/ThemeContext";
 import { useContext } from "react";
 
-
 const Navbar = () => {
   const navigate = useNavigate();
   const isRootRoute = location.pathname === "/";
-
+  
   const localData =
     localStorage.getItem("Teacher jwtToken") ||
     localStorage.getItem("Student jwtToken") ||
@@ -82,5 +81,4 @@ const Navbar = () => {
     </>
   );
 };
-
 export default Navbar;
