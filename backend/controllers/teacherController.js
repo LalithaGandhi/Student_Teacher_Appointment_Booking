@@ -35,9 +35,6 @@ exports.getAllAppointments = catchAsync(async (req, res) => {
     res.status(200).json({ appointments });
 });
 
-
-
-
 exports.createAppointment = catchAsync(async (req, res, next) => {
 
     const sendBy = req.user.email;
