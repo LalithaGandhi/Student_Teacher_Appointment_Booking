@@ -8,5 +8,4 @@ function ApproveStudent() {
         </div>
     )
 }
-
 export default ApproveStudent
