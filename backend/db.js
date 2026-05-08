@@ -9,7 +9,7 @@ const connectToMongo = () => {
             console.log("DATABASE CONNECTED")
         })
         .catch(err => {
-            console.log("OH NO ERROR!!!!")
+            console.log("DATABASE IS NOT CONNECTED!!!!")
             console.log(err)
         })
 }
