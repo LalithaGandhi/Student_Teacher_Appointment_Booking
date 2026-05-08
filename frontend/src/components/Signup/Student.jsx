@@ -143,5 +143,4 @@ function StudentRegister() {
     </>
   );
 }
-
 export default StudentRegister;
